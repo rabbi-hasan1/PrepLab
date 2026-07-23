@@ -1,7 +1,7 @@
 {
   "name": "PrepLab",
   "short_name": "Preplab",
-  "description": "My Progressive Web App",
+  "description": "Practice DUET and Diploma admission questions for free with PrepLab.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

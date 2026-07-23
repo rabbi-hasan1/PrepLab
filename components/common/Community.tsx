@@ -8,7 +8,7 @@ function Community() {
         <div className="flex flex-col justify-center items-center">
           <Buttons>Community</Buttons>
           <div className="text-3xl font-semibold text-center mt-4 md:text-6xl">
-            You're Not Studying Alone. <Buttons>10,000 +</Buttons> Diploma
+            You&apos;re Not Studying Alone. <Buttons>10,000 +</Buttons> Diploma
             Students Preparing Smarter with PrepLab.
           </div>
 
