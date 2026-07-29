@@ -47,7 +47,7 @@ export default function MobileSidebar() {
                 href={item.href}
                 onClick={() => setOpen(false)}
                 className={clsx(
-                  "flex items-center gap-3 rounded-xl px-4 py-3 transition-colors",
+                  "flex items-center gap-3 rounded-xl px-4 py-3 font-bold font-mono transition-colors",
                   isActive
                     ? "bg-primary text-primary-foreground"
                     : "hover:bg-muted",

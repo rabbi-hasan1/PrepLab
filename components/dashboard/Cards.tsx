@@ -1,16 +1,17 @@
-import Image from "next/image";
+import { LucideIcon } from "lucide-react";
 
-function Cards() {
+interface CardsProps {
+  icon: LucideIcon;
+  title: string;
+}
+
+function Cards({ icon: Icon, title }: CardsProps) {
   return (
-    <div className="w-24 border bg-emerald-900 rounded-2xl p-3 flex flex-col dark:bg-emerald-950 text-white items-center">
-      <Image
-        src="/question-banks.png"
-        alt="no image"
-        width={60}
-        height={60}
-        className="w-auto h-auto"
-      />
-      <p className=" font-semibold md:font-bold pt-1.5 px-1">Questions</p>
+    <div className="flex flex-col items-center gap-1.5  cursor-pointer">
+      <div className="flex items-center justify-center bg-white dark:bg-zinc-800 rounded-md border border-zinc-200 dark:border-zinc-700  p-3">
+        <Icon strokeWidth={1.5} size={26} />
+      </div>
+      <p className="font-bangla text-sm">{title}</p>
     </div>
   );
 }

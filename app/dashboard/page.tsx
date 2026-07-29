@@ -1,16 +1,16 @@
-import Cards from "@/components/dashboard/Cards";
-
+import Achivement from "@/components/dashboard/Achivement";
+import Activitys from "@/components/dashboard/Activitys";
+import DashboardTop from "@/components/dashboard/DashboardTop";
+import LeaderBoard from "@/components/dashboard/LeaderBoard";
 export default function DashboardPage() {
   return (
-    <div className=" w-full  items-center justify-center-safe flex gap-4  flex-wrap max-w-3xl mx-auto">
-      <Cards />
-      <Cards />
-      <Cards />
-      <Cards />
-      <Cards />
-      <Cards />
-      <Cards />
-      <Cards />
-    </div>
+    <>
+      <DashboardTop />
+      <Activitys />
+      <div className="flex flex-col md:flex-row md:items-center gap-3">
+        <LeaderBoard />
+        <Achivement />
+      </div>
+    </>
   );
 }
